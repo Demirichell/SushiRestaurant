@@ -1,11 +1,23 @@
-*{
+* {
     margin: 0%;
 }
+
 section {
- background-color: black;
- height: 100vh;
- display: flex;
-}
-nav {
+    background-color: black;
+    height: 100vh;
     display: flex;
 }
+h2{
+    position: relative; left: 75%;
+}
+nav {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    width: 100%;
+    font-size: large;
+    word-spacing: 6px;
+
+}
+
+
