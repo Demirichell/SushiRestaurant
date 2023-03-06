@@ -1,7 +1,12 @@
 html{
 margin: 0%;
+
 }
 section {
  background-color: black;
- 
+ height: 100vh;
+ display: flex;
+}
+nav {
+    display: flex;
 }
