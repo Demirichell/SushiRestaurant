@@ -8,18 +8,22 @@
 
 <body>
     <nav>
-        <h1>Home Menu About us</h1>
+        <h1>Home</h1>
+        <h1>Menu</h1>
+        <h1>About us</h1>
 
 
         <h2>Log-in </h2>
     </nav>
-    <section>
-        <img src="img/sushilandingpage.jpg" alt="sushi">
+    <section a id="landingpage">
+        <img class="sushibig" src="img/sushilandingpage.jpg" alt="sushi">
         <div class="aboutus">1</div>
+        <img class="sushirigt" src="img/sushiright.jpg" alt="">
     </section>
     <section>
         <p>joe</p>
     </section>
+   
 
 </body>
 

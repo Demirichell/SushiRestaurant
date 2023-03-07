@@ -10,10 +10,14 @@ section {
     align-items: center;
     justify-content: center;
 }   
+h1{
+    padding: 6px;
+}
 h2{
     position: relative; left: 75%;
 }
 nav {
+    display: flex;
     background-color: black;
     color: aliceblue;
     display: flex;
@@ -21,16 +25,30 @@ nav {
     height: 50px;
     font-size: large;
     word-spacing: 6px;
-   position: fixed;
+    position: fixed;
 }
 img{
     width: 100%;
     height: 50%;
-    padding-top: 50px;
+   
 }
 .aboutus{
     
     background-color: rgba(35, 35, 35, 1);
     width: 562px;
     height: 300px;
+    margin: 10px;
+    border: solid red;
 }
+.sushirigt {
+    width: 562px;
+    height: 300px;
+    margin: 10px;
+    border: solid red;
+}
+.sushibig{
+    padding-top: 50px;
+}
+
+
+  
