@@ -1,0 +1,14 @@
+.searchmenu {
+    background-color: rgba(35, 35, 35, 1);
+    height: 600px;
+    width: 300px;
+}
+.menu{
+    background-color: rgba(35, 35, 35, 1);
+    height: 600px;
+    width: 300px; 
+}
+h3{
+    color: aliceblue;
+    font-size: xx-large;
+}

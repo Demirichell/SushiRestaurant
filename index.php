@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <title>sushi</title>
 </head>
 
@@ -20,8 +21,10 @@
         <div class="aboutus">1</div>
         <img class="sushirigt" src="img/sushiright.jpg" alt="">
     </section>
-    <section>
-        <p>joe</p>
+    <section a id="menu">
+    <div class="searchmenu">1</div>
+    <h3>Menu</h3>
+    <div class="Menu">1</div>
     </section>
    
 

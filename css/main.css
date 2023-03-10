@@ -15,6 +15,7 @@ h1{
 }
 h2{
     position: relative; left: 75%;
+    padding: 6px;
 }
 nav {
     display: flex;
