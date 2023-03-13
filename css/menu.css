@@ -6,10 +6,11 @@
 }
 .menu{
     background-color: rgba(35, 35, 35, 1);
-    height: 600px;
-    width: 300px; 
+    width: 562px;
+    height: 300px;
 }
 h3{
     color: aliceblue;
     font-size: xx-large;
+    position: relative; left: 75%;
 }
