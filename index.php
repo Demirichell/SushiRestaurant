@@ -24,7 +24,7 @@
     <section a id="menu">
     <div class="searchmenu">1</div>
     <h3>Menu</h3>
-    <div class="Menu">1</div>
+    <div class="menu">1</div>
     </section>
    
 
