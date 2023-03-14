@@ -1,9 +1,4 @@
-.searchmenu {
-    background-color: rgba(35, 35, 35, 1);
-    height: 600px;
-    width: 300px;
-    
-}
+
 .menu{
     background-color: rgba(35, 35, 35, 1);
     width: 562px;
@@ -12,5 +7,9 @@
 h3{
     color: aliceblue;
     font-size: xx-large;
-    position: relative; left: 75%;
+  
+}
+#menu{
+    /* display: flex;
+    flex-wrap: wrap; */
 }
