@@ -22,6 +22,7 @@
         <img class="sushirigt" src="img/sushiright.jpg" alt="">
     </section>
     <section a id="menu">
+  
     <div class="searchmenu">1</div>
     <h3>Menu</h3>
     <div class="menu">1</div>
