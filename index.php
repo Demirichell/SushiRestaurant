@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
     <nav>
         <h1>Home</h1>
         <h1>Menu</h1>
@@ -24,9 +24,14 @@
         <img class="sushirigt" src="img/sushiright.jpg" alt="">
     </section>
     <section id="menu">
-
-        
-        <h3>Menu</h3>
+         <div class="searchmenu">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
         <div class="menu">1</div>
     </section>
 

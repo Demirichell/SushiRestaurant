@@ -11,8 +11,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
-    border: red 1px solid;
+     border: red 1px solid;
 }
 
 h1 {
