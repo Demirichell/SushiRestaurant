@@ -58,10 +58,10 @@ try {
     <section id="menu2">
 
         <div class="menu2">
-            <div class="smallmenu"></div>
-            <div class="smallmenu"></div>
-            <div class="smallmenu"></div>
-            <div class="smallmenu"></div>
+            <div class="smallmenu"><img class="singlesushi"src="img/ebi nigiri.jpg" alt="ebi"></div>
+            <div class="smallmenu"><img class="singlesushi"src="img/ikura gunkan.jpg" alt=""></div>
+            <div class="smallmenu"><img class="singlesushi"src="img/marguro nigiri.jpg" alt=""></div>
+            <div class="smallmenu"><img class="singlesushi"src="img/nigiri.jpg" alt=""></div>
         </div>
     </section>
 
