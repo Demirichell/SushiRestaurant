@@ -6,13 +6,6 @@
     margin: 10px;
 }
 
-.menu {
-    background-color: rgba(35, 35, 35, 1);
-    width: 800px;
-    height: 600px;
-    border: red 1px solid;
-    margin: 10px;
-}
 
 .topnav .search-container {
     float: right;
@@ -30,12 +23,58 @@
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
+    background-color:  rgb(33, 32, 32);
     font-size: 17px;
     border: none;
     cursor: pointer;
+
 }
 
-.topnav .search-container button:hover {
-    background: #ccc;
+button{
+    background-color:  rgb(33, 32, 32);
+    color: black;
+    border: 2px solid #ff0000; 
+
+  
+}
+
+.menu {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(33, 32, 32);
+    width: 800px;
+    height: 600px;
+    border: rgb(255, 0, 0) 1px solid;
+    margin: 10px;
+    
+}
+
+.schotel {
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    height: 500px;
+    width: 300px;
+}
+
+
+.menu2 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(33, 32, 32);
+    width: 800px;
+    height: 600px;
+    border: rgb(255, 0, 0) 1px solid;
+    margin: 10px;
+    padding-top: 20px;
+}
+.smallmenu {
+    display: flex;
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    height: 35%;
+    width: 40%;
 }

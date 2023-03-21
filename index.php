@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+try {
+    $database = new PDO("mysql:host=localhost;dbname=test1", "root");
+} catch (PDOException $e) {
+    echo "connection failed";
+}
+?>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/menu.css">
     <title>sushi</title>
@@ -15,8 +23,15 @@
         <h1>Menu</h1>
         <h1>About us</h1>
 
+        <h2><span class="material-symbols-outlined">
+                account_circle
+            </span>
+        </h2>
+        <h2><span class="material-symbols-outlined">
+                shopping_cart
+            </span></h2>
 
-        <h2>Log-in </h2>
+
     </nav>
     <section id="landingpage">
         <img class="sushibig" src="img/sushilandingpage.jpg" alt="sushi">
@@ -24,15 +39,30 @@
         <img class="sushirigt" src="img/sushiright.jpg" alt="">
     </section>
     <section id="menu">
-         <div class="searchmenu">
+        <div class="searchmenu">
             <div class="search-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button type="submit"><span class="material-symbols-outlined">
+                            search
+                        </span><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
-        <div class="menu">1</div>
+        <div class="menu">
+
+            <div class="schotel"></div>
+            <div class="schotel"></div>
+        </div>
+    </section>
+    <section id="menu2">
+
+        <div class="menu2">
+            <div class="smallmenu"></div>
+            <div class="smallmenu"></div>
+            <div class="smallmenu"></div>
+            <div class="smallmenu"></div>
+        </div>
     </section>
 
 
