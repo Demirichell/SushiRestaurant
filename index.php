@@ -23,9 +23,9 @@ try {
         <h1>Menu</h1>
         <h1>About us</h1>
 
-        <h2><span class="material-symbols-outlined">
+        <h2><a href="inlog.php"><span class="material-symbols-outlined">
                 account_circle
-            </span>
+            </span></a>
         </h2>
         <h2><span class="material-symbols-outlined">
                 shopping_cart
@@ -51,8 +51,8 @@ try {
         </div>
         <div class="menu">
 
-            <div class="schotel"></div>
-            <div class="schotel"></div>
+            <div class="schotel"><img src="img/makischotel.jpg" alt=""></div>
+            <div class="schotel"><img src="img/makischotelgroot.jpg" alt=""></div>
         </div>
     </section>
     <section id="menu2">
