@@ -18,6 +18,7 @@
     <title>Login</title>
 </head>
 <body>
+    <div>
     <form action="post.php" method="post">
         email
         <input type="email" name="email" id="" 
@@ -26,6 +27,6 @@
         <input type="password" name="password" id="">
         <input type="submit" value="login">
     </form>
-    
+    </div>
 </body>
 </html>
