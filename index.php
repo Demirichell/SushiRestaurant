@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 try {
-    $database = new PDO("mysql:host=localhost;dbname=test1", "root");
+    $database = new PDO("mysql:host=localhost;dbname=menu", "root");
 } catch (PDOException $e) {
     echo "connection failed";
 }
@@ -19,8 +19,8 @@ try {
 <body>
 
     <nav>
-        <h1>Home</h1>
-        <h1>Menu</h1>
+        <a href="#landingpage"><h1>Home</h1></a>
+         <a href="#menu"><h1>Menu</h1></a>
         <h1>About us</h1>
 
         <h2><a href="inlog.php"><span class="material-symbols-outlined">
@@ -58,9 +58,9 @@ try {
     <section id="menu2">
 
         <div class="menu2">
-            <div class="smallmenu"><img class="singlesushi"src="img/ebi nigiri.jpg" alt="ebi"></div>
-            <div class="smallmenu"><img class="singlesushi"src="img/ikura gunkan.jpg" alt=""></div>
-            <div class="smallmenu"><img class="singlesushi"src="img/marguro nigiri.jpg" alt=""></div>
+            <div class="smallmenu"><img class="singlesushi"src="img/ebi_nigiri.jpg" alt="ebi"></div>
+            <div class="smallmenu"><img class="singlesushi"src="img/ikura_gunkan.jpg" alt=""></div>
+            <div class="smallmenu"><img class="singlesushi"src="img/marguro_nigiri.jpg" alt=""></div>
             <div class="smallmenu"><img class="singlesushi"src="img/nigiri.jpg" alt=""></div>
         </div>
     </section>

@@ -1,0 +1,8 @@
+* {
+    margin: 0%;
+}
+
+.login {
+display: flex;
+background-color: black;
+}
