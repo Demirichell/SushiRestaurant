@@ -59,25 +59,15 @@ button{
 }
 
 
-.menu2 {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(33, 32, 32);
-    width: 800px;
-    height: 600px;
-    border: rgb(255, 0, 0) 1px solid;
-    margin: 10px;
-    padding-top: 20px;
-}
+
 .smallmenu {
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     margin: 20px;
     padding-bottom: 20px;
     background-color: black;
     height: 35%;
-    width: 40%; 
+    
 }
 .singlesushi{
     height: 60%;

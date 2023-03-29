@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-try {
-    $database = new PDO("mysql:host=localhost;dbname=menu", "root");
-} catch (PDOException $e) {
-    echo "connection failed";
-}
-?>
+
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +13,17 @@ try {
 <body>
 
     <nav>
-        <a href="#landingpage"><h1>Home</h1></a>
-         <a href="#menu"><h1>Menu</h1></a>
+        <a href="#landingpage">
+            <h1>Home</h1>
+        </a>
+        <a href="#menu">
+            <h1>Menu</h1>
+        </a>
         <h1>About us</h1>
 
         <h2><a href="inlog.php"><span class="material-symbols-outlined">
-                account_circle
-            </span></a>
+                    account_circle
+                </span></a>
         </h2>
         <h2><span class="material-symbols-outlined">
                 shopping_cart
@@ -49,20 +47,31 @@ try {
                 </form>
             </div>
         </div>
-        <div class="menu">
+        <?php
+        include_once "./includes/connect.php";
 
-            <div class="schotel"><img src="img/makischotel.jpg" alt=""></div>
-            <div class="schotel"><img src="img/makischotelgroot.jpg" alt=""></div>
+        $stmt = $conn->prepare("SELECT * FROM gerechten;");
+        $stmt->execute();
+        $data = $stmt->fetchAll();
+        //var_dump($data);
+        ?>
+        <div class="menu">
+        <?php
+            foreach ($data as $key => $value) :
+            ?>
+                <div class="smallmenu">
+                    <p> <?php echo $value ['naam']; ?> </p>
+                    <p> <?php echo $value ['prijs']; ?> </p>
+                    <p> <?php echo $value ['beschrijving']; ?> </p>
+                    <p> <?php echo $value ['img']; ?> </p>
+                </div>
+            <?php endforeach; ?>
+            
         </div>
     </section>
     <section id="menu2">
 
-        <div class="menu2">
-            <div class="smallmenu"><img class="singlesushi"src="img/ebi_nigiri.jpg" alt="ebi"></div>
-            <div class="smallmenu"><img class="singlesushi"src="img/ikura_gunkan.jpg" alt=""></div>
-            <div class="smallmenu"><img class="singlesushi"src="img/marguro_nigiri.jpg" alt=""></div>
-            <div class="smallmenu"><img class="singlesushi"src="img/nigiri.jpg" alt=""></div>
-        </div>
+
     </section>
 
 
