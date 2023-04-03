@@ -1,36 +1,28 @@
-<?php
-if (isset($_POST["email"]) && isset($_POST["password"])) {
-    if (
-        $_POST["email"] == 'd.radic@roc-nijmegen.nl' &&
-        $_POST["password"] == '12345'
-    ) {
-        echo 'success';
+<?php include_once ('includes/connect.php');
+
+$message ="";
+//var_dump($_POST);
+if (isset($_POST["email"]) && isset($_POST['password'])) {
+    if(empty($_POST['email'])&& empty($_POST ['password'])){
+    $message = " email and password is empty";
+    }  else {
+        if ($_POST['email'] == "demi@rocnijmegen.nl" && $_POST['password'] == "1234"){
+            $_SESSION['user_logged_in'] = true;
+            $_SESSION['email'] = $_POST ['email'];
+            header ("location: admin.php");
+        }
     }
 }
-//var_dump($_POST);
-//var_dump($_POST["email"]);
+      
+    
+
+
 
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="/css/inlog.css">
-    <title>Login</title>
-</head>
-
-<body>
-    
-        <form class="login" action="post.php" method="post">
-            email
-            <input type="email" name="email" id="" placeholder="email">
-            password
-            <input type="password" name="password" id="">
-            <input type="submit" value="login">
-        </form>
-    
-</body>
-
-</html>
+<form action="" method="post">
+    <input type="email" name="email" id="">
+    <input type="password" name="password" id="">
+    <input type="submit" name="submit" value="login">
+</form>
+<?php //include_once ('footer.php')?>

@@ -62,15 +62,24 @@ button{
 
 .smallmenu {
     display: flex;
-    justify-content: center;
+    justify-content:left;
+    flex-wrap: wrap;
     margin: 20px;
     padding-bottom: 20px;
     background-color: black;
-    height: 35%;
+    min-height: 10vh;
+    width: 25%;
+    max-height: fit-content;
     
 }
 .singlesushi{
     height: 60%;
     width: 60%;
     padding: 30px;
+}
+.sushi{
+    height: 50%;
+    width: 100%;
+
+
 }

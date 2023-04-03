@@ -56,17 +56,18 @@
         //var_dump($data);
         ?>
         <div class="menu">
-        <?php
+            <?php
             foreach ($data as $key => $value) :
             ?>
                 <div class="smallmenu">
-                    <p> <?php echo $value ['naam']; ?> </p>
-                    <p> <?php echo $value ['prijs']; ?> </p>
-                    <p> <?php echo $value ['beschrijving']; ?> </p>
-                    <p> <?php echo $value ['img']; ?> </p>
+                    <img class="sushi" src="<?php echo $value['img']; ?> " alt="gerechten">
+                    <p> <?php echo $value['naam']; ?> <br>
+                        <?php echo $value['prijs']; ?> <br>
+                        <?php echo $value['beschrijving']; ?> </p>
+
                 </div>
             <?php endforeach; ?>
-            
+
         </div>
     </section>
     <section id="menu2">
