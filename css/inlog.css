@@ -2,7 +2,15 @@
     margin: 0%;
 }
 
-.login {
-display: flex;
-background-color: black;
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inlogform{
+    border: red 1px solid; 
+    height: 40vh;
+    width: 40vw;
+    display: flex;
 }
