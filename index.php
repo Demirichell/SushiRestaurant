@@ -25,7 +25,7 @@
                     account_circle
                 </span></a>
         </h2>
-        <h2><span class="material-symbols-outlined">
+        <h2><span class="matet½rial-symbols-outlined">
                 shopping_cart
             </span></h2>
 

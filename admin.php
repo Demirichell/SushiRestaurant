@@ -42,7 +42,7 @@ if (isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] == true) {
                 <p> <?php echo $value['naam']; ?> <br>
                     <?php echo $value['prijs']; ?> <br>
                     <?php echo $value['beschrijving']; ?> <br>
-                     <button><a href="delete.php?id=<?php echo $value['id']; ?>">delete</a></button>
+                    <button><a href="delete.php?id=<?php echo $value['id']; ?>">delete</a></button>
                 </p>
             </div>
         <?php endforeach; ?>
