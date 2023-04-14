@@ -34,7 +34,7 @@ if (isset($_POST["email"]) && isset($_POST['password'])) {
 </div>
 
 <div class="inlogform">
-<form action="" method="post">
+<form action="./includes/login.php" method="post" >
     <input type="email" name="email" id="">
     <input type="password" name="password" id="">
     <input type="submit" name="submit" value="login">
