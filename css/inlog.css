@@ -3,10 +3,12 @@
 }
 
 body{
-    background-color: black;
+    background-image: url("../img/inlogpagebackground.jpg");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .inlogform{
     border: red 1px solid; 
