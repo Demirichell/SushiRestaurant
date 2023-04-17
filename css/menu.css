@@ -1,53 +1,22 @@
-.searchmenu {
-    background-color: rgba(35, 35, 35, 1);
-    width: 300px;
-    height: 600px;
-    border: red 1px solid;
-    margin: 10px;
-}
-
-
-.topnav .search-container {
-    float: right;
-}
-
-.topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-}
-
-.topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background-color:  rgb(33, 32, 32);
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-
-}
-
-button{
-    background-color:  rgb(33, 32, 32);
+button {
+    background-color: rgb(33, 32, 32);
     color: black;
-    border: 2px solid #ff0000; 
+    border: 2px solid #ff0000;
 
-  
+
 }
+
+
 
 .menu {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(33, 32, 32);
-    width: 800px;
-    height: 600px;
-    border: rgb(255, 0, 0) 1px solid;
+    width: 75%;
+    height: fit-content;
     margin: 10px;
-    
+
 }
 
 .schotel {
@@ -60,26 +29,25 @@ button{
 
 
 
-.smallmenu {
-    display: flex;
-    justify-content:left;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding-bottom: 20px;
-    background-color: black;
-    min-height: 10vh;
-    width: 25%;
-    max-height: fit-content;
-    
-}
-.singlesushi{
+
+.singlesushi {
     height: 60%;
     width: 60%;
     padding: 30px;
 }
-.sushi{
-    height: 50%;
+
+.sushi {
+    height: fit-content;
     width: 100%;
 
 
+}
+
+@media only screen and (max-width: 600px) {
+    h6 {
+        font-size: 8em;
+        color: #ff0000;
+        margin: 60px;
+        display: flex;
+    }
 }

@@ -2,12 +2,6 @@
     margin: 0%;
 }
 
-h3 {
-    font-size: 8em;
-    color: rgb(234, 161, 127);
-    margin: 20px;
-}
-
 body {
     background-image: url(../img/inlogpagebackground.jpg);
     background-size: cover;
@@ -17,7 +11,7 @@ body {
     flex-wrap: wrap;
 }
 
-.registrationform {
+.itemtoevoegen {
     background-color: rgba(0, 0, 0, 0.736);
     border-radius: 12px;
     height: 50vh;
@@ -27,7 +21,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 30px;
-
 }
 
 form {
@@ -40,13 +33,12 @@ form {
 
 input {
     width: 60%;
-    background-color: #f9f9f9;
+    background-color: #000000;
     margin: 6px;
-    border-radius: 5px;
 
 }
 
-.registerbutton {
+.addbutton {
     background-color: crimson;
     color: white;
     padding: 14px 25px;

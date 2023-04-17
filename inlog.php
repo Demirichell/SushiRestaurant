@@ -1,18 +1,18 @@
-<?php include_once('includes/connect.php');
+<?php
 
-$message = "";
-//var_dump($_POST);
-if (isset($_POST["email"]) && isset($_POST['password'])) {
-    if (empty($_POST['email']) && empty($_POST['password'])) {
-        $message = " email and password is empty";
-    } else {
-        if ($_POST['email'] == "demi@rocnijmegen.nl" && $_POST['password'] == "1234") {
-            $_SESSION['user_logged_in'] = true;
-            $_SESSION['email'] = $_POST['email'];
-            header("location: admin.php");
-        }
+include_once('./includes/connect.php');
+include_once('./includes/database.php');
+
+if (isset($_POST['email']) && isset($_POST['password'])) {
+    $user = findUser($_POST['email'], $_POST['password']);
+    var_dump($user);
+    if ($user !== null) {
+        $_SESSION['user_logged_in'] = true;
+        $_SESSION['email'] = $_POST['email'];
+        header("location: admin.php");
     }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ if (isset($_POST["email"]) && isset($_POST['password'])) {
 
     <div class="inlogform">
         <img class="avatar" src="./img/emptyavatar.png" alt="avatar">
-        <form action="" method="post">
+        <form action="./inlog.php" method="post">
             <input type="email" name="email" id="email" placeholder="email">
             <input type="password" name="password" id="" placeholder="password">
             <input type="submit" name="submit" value="login">
