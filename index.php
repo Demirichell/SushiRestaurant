@@ -70,7 +70,8 @@
 
         </div>
     </section>
-    <section id="menu2">
+    <section id="contact">
+        <h4> contact</h4>
 
 
     </section>

@@ -1,5 +1,5 @@
 * {
-    margin: 0%; 
+    margin: 0%;
     color: aliceblue;
 }
 
@@ -36,15 +36,15 @@ nav {
     word-spacing: 6px;
     position: fixed;
 }
+
 .material-symbols-outlined {
-    
+
     padding: 6px;
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-    
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 img {
@@ -72,7 +72,8 @@ img {
 .sushibig {
     padding-top: 50px;
 }
-#menu{
+
+#menu {
     background-color: rgb(0, 0, 0);
 
     min-height: 100vh;
@@ -81,9 +82,10 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: red 1px solid; 
+    border: red 1px solid;
 }
-#menu2{
+
+#contact {
     background-color: rgb(0, 0, 0);
 
     min-height: 100vh;
@@ -92,5 +94,5 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: red 1px solid; 
+    border: red 1px solid;
 }

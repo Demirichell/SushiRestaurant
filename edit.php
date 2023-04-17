@@ -8,7 +8,7 @@
     $stmt = $conn->prepare("SELECT * FROM gerechten WHERE ID =:id");
     $stmt->execute(['id' => $_GET['id']]);
     $data = $stmt->fetch();
-    if (isset($_POST["toevoegen"])) {
+    if (isset($_POST["veranderen"])) {
         $sql = "UPDATE gerechten SET
         naam = :naam,
         beschrijving = :beschrijving,
@@ -34,7 +34,6 @@
          <input type="text" name="beschrijving" id="" value="<?php echo $data['beschrijving']; ?>" placeholder="beschrijving">
          <input type="text" name="prijs" id="" value="<?php echo $data['prijs']; ?>" placeholder="prijs">
          <input type="text" name="img" id="" value="<?php echo $data['img']; ?>" placeholder="img">
-         <input type="submit" value="toevoegen" name="toevoegen">
-
+         <input type="submit" value="veranderen" name="veranderen">
      </form>
  </div>
