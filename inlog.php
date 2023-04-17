@@ -1,3 +1,19 @@
+<?php include_once('includes/connect.php');
+
+$message = "";
+//var_dump($_POST);
+if (isset($_POST["email"]) && isset($_POST['password'])) {
+    if (empty($_POST['email']) && empty($_POST['password'])) {
+        $message = " email and password is empty";
+    } else {
+        if ($_POST['email'] == "demi@rocnijmegen.nl" && $_POST['password'] == "1234") {
+            $_SESSION['user_logged_in'] = true;
+            $_SESSION['email'] = $_POST['email'];
+            header("location: admin.php");
+        }
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,42 +30,23 @@
 
 <body>
 
-<div>
-    <?php include_once ('includes/connect.php');
+    <div>
 
-$message ="";
-//var_dump($_POST);
-if (isset($_POST["email"]) && isset($_POST['password'])) {
-    if(empty($_POST['email'])&& empty($_POST ['password'])){
-    $message = " email and password is empty";
-    }  else {
-        if ($_POST['email'] == "demi@rocnijmegen.nl" && $_POST['password'] == "1234"){
-            $_SESSION['user_logged_in'] = true;
-            $_SESSION['email'] = $_POST ['email'];
-            header ("location: admin.php");
-        }
-    }
-}
-?>
-</div>
+    </div>
 
-<div class="inlogform">
-<form action="./includes/login.php" method="post" >
-    <input type="email" name="email" id="">
-    <input type="password" name="password" id="">
-    <input type="submit" name="submit" value="login">
-</form>
-<?php //include_once ('footer.php')?>
-</div>
-
+    <div class="inlogform">
+        <img class="avatar" src="./img/emptyavatar.png" alt="avatar">
+        <form action="" method="post">
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="password" name="password" id="" placeholder="password">
+            <input type="submit" name="submit" value="login">
+        </form>
+        <?php //include_once ('footer.php')
+        ?>
+    </div>
+    <div class="registerbutton">
+        <a href="register.php">registreer</a>
+    </div>
 </body>
 
 </html>
-
-
-
-
-
-
-
-

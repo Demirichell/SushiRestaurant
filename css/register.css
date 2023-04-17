@@ -1,13 +1,57 @@
 * {
     margin: 0%;
 }
-body{
-    display: flex;
-    background-color: black;
-    justify-content: center;
+
+h3 {
+    font-size: 8em;
+    color: rgb(234, 161, 127);
+    text-decoration: dotted red;
+    margin: 20px;
 }
+
+body {
+    background-image: url(../img/inlogpagebackground.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.registrationform {
+    background-color: rgba(0, 0, 0, 0.736);
+    border-radius: 12px;
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+
+}
+
 form {
-    width: 45%;
-    height: 500px;
-    border: 1px, red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+input {
+    width: 60%;
+    background-color: #000000;
+    margin: 6px;
+
+}
+
+.registerbutton {
+    background-color: crimson;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    pointer-events: fill;
 }

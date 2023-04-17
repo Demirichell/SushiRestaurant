@@ -2,31 +2,102 @@
     margin: 0%;
 }
 
-body{
-    background-color: black;
+
+
+body {
+    background-image: url(../img/inlogpagebackground.jpg);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.inlogform{
-    border: red 1px solid; 
-    height: 40vh;
+
+.inlogform {
+    background-color: rgba(0, 0, 0, 0.736);
+    border-radius: 12px;
+    height: 50vh;
     width: 40vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
 
 }
+
 input {
     width: 60%;
     background-color: #000000;
 
 }
+
 form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 20px;
 }
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    padding: 20px;
+}
+
+.registerbutton {
+
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+a:link,
+a:visited {
+    background-color: #000000;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: red;
+}
+
 @media only screen and (max-width: 600px) {
-    .example {background: red;}
+    .inlogform {
+        background-color: rgba(0, 0, 0, 0.736);
+        border-radius: 12px;
+        height: 40vh;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px;
+
+    }
+
+    .avatar {
+        border-radius: 50%;
+        width: 30vw;
+        height: 30vw;
+        padding: 20px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+label {
+    margin-left: 25px;
 }
