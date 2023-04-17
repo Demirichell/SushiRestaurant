@@ -19,35 +19,14 @@ if (isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] == true) {
 
 <body>
 
-    <nav>
 
-        <button> <a href="logout.php"> logout </a></button>
 
-    </nav>
-    <?php
-    if (isset($_POST["submit"])) {
-        $sql = "INSERT INTO gerechten
-        ( naam, prijs,beschrijving, img)
-        VALUES
-        (:naam, :prijs, :beschrijving, :img)";
+    <button> <a href="logout.php"> logout </a></button>
 
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':naam', $_POST['naam']);
-        $stmt->bindParam(':prijs', $_POST['prijs']);
-        $stmt->bindParam(':beschrijving', $_POST['beschrijving']);
-        $stmt->bindParam(':img', $_POST['img']);
-        $stmt->execute();
-    }
-    ?>
-    <div>
-        <form action="" method="post">
-            <input type="text" name="naam" id="" placeholder="naam gerecht"><br>
-            <input type="text" name="beschrijving" id="" placeholder="beschrijving"><br>
-            <input type="text" name="prijs" id="" placeholder="prijs"><br>
-            <input type="text" name="img" id="" placeholder="img url"><br>
-            <input type="submit" value="toevoegen" name="submit">
-        </form>
-    </div>
+
+
+
+
     <?php
     include_once "./includes/connect.php";
 
@@ -67,6 +46,8 @@ if (isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] == true) {
                     <?php echo $value['prijs']; ?> <br>
                     <?php echo $value['beschrijving']; ?> <br>
                     <button><a href="delete.php?id=<?php echo $value['id']; ?>">delete</a></button>
+                    <button><a href="edit.php?id=<?php echo $value['id']; ?>">edit</a></button>
+                    <button><a href="insert.php?id=<?php echo $value['id']; ?>">insert</a></button>
                 </p>
             </div>
         <?php endforeach; ?>
