@@ -1,0 +1,57 @@
+* {
+    margin: 0%;
+}
+
+
+
+body {
+    background-image: url(../img/inlogpagebackground.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.editform {
+    background-color: rgba(0, 0, 0, 0.736);
+    border-radius: 12px;
+    height: fit-content;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+
+}
+
+input {
+    width: 60%;
+    background-color: #060606;
+    color: aliceblue;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    padding: 20px;
+}
+
+.registerbutton {
+
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
