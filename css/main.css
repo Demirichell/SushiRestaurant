@@ -8,6 +8,7 @@ a {
     text-decoration: none;
 }
 
+
 section {
     background-color: rgb(0, 0, 0);
     min-height: 100vh;
@@ -48,6 +49,10 @@ nav {
     font-size: large;
     word-spacing: 6px;
     position: fixed;
+}
+
+.searchbar {
+    border: 1px red;
 }
 
 .material-symbols-outlined {

@@ -21,11 +21,16 @@
             <h1>Menu</h1>
         </a>
         <h1>About us</h1>
-
         <h2><a href="inlog.php"><span class="material-symbols-outlined">
                     account_circle
                 </span></a>
         </h2>
+
+        <form action="search.php" method="post">
+            <input type="search" name="search">
+            <input type="submit" name="submit">
+        </form>
+
     </nav>
     <section id="landingpage">
         <img class="sushibig" src="img/sushilandingpage.jpg" alt="sushi">
@@ -47,6 +52,7 @@
         $data = $stmt->fetchAll();
         //var_dump($data);
         ?>
+        <div class="searchmenu"></div>
         <div class="menu">
             <?php
             foreach ($data as $key => $value) :

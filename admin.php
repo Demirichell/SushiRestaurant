@@ -50,7 +50,7 @@ if (isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] == true) {
                     <?php echo $value['beschrijving']; ?> <br>
                     <button onclick="myFunction()"><a href="delete.php?id=<?php echo $value['id']; ?>">delete</a></button>
                     <button><a href="edit.php?id=<?php echo $value['id']; ?>">edit</a></button>
-                    <button><a href="insert.php?id=<?php echo $value['id']; ?>">insert</a></button>
+                    <button><a href="insert.php">insert</a></button>
                 </p>
             </div>
         <?php endforeach; ?>

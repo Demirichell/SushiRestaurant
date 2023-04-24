@@ -29,11 +29,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 </head>
 
 <body>
-
     <div>
-
     </div>
-
     <div class="inlogform">
         <img class="avatar" src="./img/emptyavatar.png" alt="avatar">
         <form action="./inlog.php" method="post">
